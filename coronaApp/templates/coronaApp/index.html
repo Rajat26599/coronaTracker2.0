@@ -1,5 +1,16 @@
 {% extends "coronaApp/base.html" %}
 
 {% block content %}
-<h1>Hello World!</h1>
+  <h1>Hello World!</h1>
+
+  <h3>Most Affected Counties are:</h3>
+  {% for inf_cont in inf_contries  %}
+    <p>{{inf_cont}}</p>
+  {% endfor %}
+  <br>
+
+  <h3>Safest Places are:</h3>
+  {% for safe_cont in safe_contries %}
+    <p>{{safe_cont}}</p>
+  {% endfor %}
 {% endblock %}
